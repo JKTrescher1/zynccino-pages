@@ -3,18 +3,133 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zynccino</title>
+<title>Zynccino — Track. Understand. Quit on your terms.</title>
+<meta name="description" content="Zynccino is a private tracker for nicotine pouch use — see your spend, your patterns, and quit at your own pace.">
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; line-height: 1.6; color: #1a1a1a; }
-  a { color: #112A4F; }
-  ul { padding-left: 1.2rem; }
+  :root {
+    --navy: #0b1830;
+    --navy-2: #112A4F;
+    --ink: #e8edf5;
+    --muted: #9fb0c9;
+    --accent: #f5c451;
+    --card: #101f3d;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--navy);
+    color: var(--ink);
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  header.hero {
+    padding: 56px 20px 40px;
+    text-align: center;
+    background: radial-gradient(circle at 50% 0%, var(--navy-2), var(--navy) 70%);
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+  .brand img { width: 44px; height: 44px; border-radius: 11px; }
+  .brand span { font-size: 1.4rem; font-weight: 600; letter-spacing: -0.01em; }
+  h1 {
+    font-size: clamp(2rem, 6vw, 2.9rem);
+    line-height: 1.1;
+    margin: 0 0 16px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .sub {
+    color: var(--muted);
+    font-size: 1.1rem;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  section.feature {
+    padding: 48px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  section.feature img {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 30px 60px -20px rgba(0,0,0,0.6);
+  }
+  section.feature .caption {
+    margin-top: 20px;
+    color: var(--muted);
+    font-size: 0.95rem;
+    max-width: 380px;
+  }
+  section.feature:nth-child(even) { background: rgba(255,255,255,0.02); }
+  footer {
+    padding: 48px 20px 60px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  footer a {
+    color: var(--accent);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.95rem;
+  }
+  footer a:hover { text-decoration: underline; }
+  footer .fine {
+    margin-top: 24px;
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
 </style>
 </head>
 <body>
-  <h1>Zynccino</h1>
-  <ul>
-    <li><a href="./support.html">Support</a></li>
-    <li><a href="./privacy.html">Privacy Policy</a></li>
-  </ul>
+  <header class="hero">
+    <div class="brand">
+      <img src="./img/icon.png" alt="Zynccino icon">
+      <span>Zynccino</span>
+    </div>
+    <h1>Know your habit.<br>Change it on your terms.</h1>
+    <p class="sub">A private tracker for nicotine pouch use — see what it's costing you, spot your patterns, and quit at your own pace when you're ready.</p>
+  </header>
+
+  <section class="feature">
+    <img src="./img/track.png" alt="Zynccino home screen — log a zyn, skip, donate, or bum one off a friend, with today's count and spend">
+    <p class="caption">One tap to log, skip, or share a pouch — with today's count and spend right up front. Simple, private, no judgment.</p>
+  </section>
+
+  <section class="feature">
+    <img src="./img/progress.png" alt="Zynccino chart screen — weekday breakdown, stats, and a written reflection on your patterns">
+    <p class="caption">Visualize your habits, savings, and patterns over time — including a written reflection on what's actually changed.</p>
+  </section>
+
+  <section class="feature">
+    <img src="./img/ai-insights.png" alt="Zynccino insights screen — what your spending could be worth invested instead">
+    <p class="caption">See what your spend really adds up to — and what it could be worth if it went somewhere else instead.</p>
+  </section>
+
+  <section class="feature">
+    <img src="./img/quit.png" alt="Zynccino quit screen — gradual, accelerated, or intensive step-down plans">
+    <p class="caption">Flexible step-down plans for whenever you're ready — gradual, accelerated, or intensive. No pressure until you choose one.</p>
+  </section>
+
+  <section class="feature">
+    <img src="./img/forum.png" alt="Zynccino forum screen — posts and tips">
+    <p class="caption">A space for tips and notes from your own tracking history, right alongside everything else.</p>
+  </section>
+
+  <footer>
+    <div>
+      <a href="./support.html">Support</a>
+      <a href="./privacy.html">Privacy Policy</a>
+    </div>
+    <p class="fine">Zynccino is an independent tracking app and is not affiliated with or endorsed by any nicotine pouch manufacturer.</p>
+  </footer>
 </body>
 </html>
